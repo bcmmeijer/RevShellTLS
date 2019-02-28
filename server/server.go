@@ -74,7 +74,7 @@ func main() {
       log.Println(err)
       continue
     }
-    log.Println("Client connected ", conn.Addr)
+    log.Println("Client connected ", conn.RemoteAddr())
     go tcp_con_handle(conn)
   }
 }
